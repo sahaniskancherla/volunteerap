@@ -1,0 +1,194 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.6
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Mar 27, 2025 at 01:45 PM
+-- Server version: 5.7.27-0ubuntu0.16.04.1-log
+-- PHP Version: 7.0.33-0ubuntu0.16.04.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `volunteerap`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `institutes`
+--
+
+CREATE TABLE `institutes` (
+  `name` varchar(70) NOT NULL,
+  `type` varchar(1) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `location` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `institutes`
+--
+
+INSERT INTO `institutes` (`name`, `type`, `email`, `location`) VALUES
+('Aaditya junior college', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('ADITYA PUBLIC SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('B V Raju Institute of Computer Education', '2', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('B V RAJU PUBLIC SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('B.Sita Polytechnic college', '4', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('BALA JYOTHI PUBLIC SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('BARADADWAJA PUBLIC SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('BHARATIYA VIDYA BHAVANS', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('BHASHYAM EDUCATIONAL INSTITUTIONS', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Browning junior college', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Chaitanya junior college', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('D N R College of Education', '4', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('D N R College of Law', '4', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('D N R Degree college', '4', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('D N R PUBLIC SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('D N R. P.G college', '4', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('DONBOSCO PUBLIC SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Dr. C S N Degree college & P.G Courses', '4', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('G T P college of Education for Women', '4', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('GEETHA BHAVANS CONCEPT SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Gollu Venkanna junior college', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('GOWTHAM MODEL SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('HOLY ANGELS PUBLIC SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('K G R L Degree college & P.G Courses', '4', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('K G R L junior college', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Kasturiba junior college (govt)', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Lutheran Degree college & P.G Courses', '4', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('mohitk', '1', 'coolmohitprasanth@gmail.com', 'Bhimavaram'),
+('MONTESSORI PUBLIC SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Nalanda junior college', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('POORNAKSHARI MERIT SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('porus', '0', 'panduji77@gmail.com', 'Bhimavaram'),
+('R R D S Degree college (govt)', '4', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('SRI CHANIKYA MASTER MINDS', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('SRI KAKATIYA MERIT SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Sri Krishna Devaraya junior college', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('SRI MEHER CONVENT', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Sri Raghavendra Degree college', '4', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Sri Raghavendra junior college', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('SRI RAGHAVENDRA RESIDENTIAL SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('SRI RAM CONVENT', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('SRI SURYA CONVENT', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('SRI VIDYA PUBLIC SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('SRKR ENGINEERING COLLEGE', '2', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('SUDDA CHAITANYA PUBLIC SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('V S K Degree college & P.G Courses', '4', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Vishnu College of Pharmacy', '3', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Vishnu Dental College & Hospital', '3', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('Vishnu Engg college for women', '2', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('VISWAKAVI RESIDENTIAL PUBLIC SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('VIVEKANANDA PUBLIC SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM'),
+('WONDER KIDS ENGLISH MEDIUM SCHOOL', '1', 'coolmohitprasanth@gmail.com', 'BHIMAVARAM');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `logins`
+--
+
+CREATE TABLE `logins` (
+  `email` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `checkbit` int(1) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `logins`
+--
+
+INSERT INTO `logins` (`email`, `password`, `checkbit`) VALUES
+('admin', 'admin', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `news`
+--
+
+CREATE TABLE `news` (
+  `title` varchar(100) NOT NULL,
+  `href` varchar(100) NOT NULL,
+  `message` text NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`title`, `href`, `message`, `time`) VALUES
+('hahahha', 'www.google.com', 'go to google', '2016-10-25 07:45:50'),
+('lets test this...', 'https://www.google.co.in/?gfe_rd=cr&ei=9Q0PWI_-EY3y8Af70ZOACg&gws_rd=ssl', 'goto google', '2016-10-25 07:47:29'),
+('mohsin said this is not working', 'http://52.34.125.246/questions/5559/unable-to-test-my-code', 'mission Rnd Post', '2016-10-25 17:32:59');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `registration`
+--
+
+CREATE TABLE `registration` (
+  `firstname` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
+  `gender` varchar(1) NOT NULL DEFAULT '0',
+  `profession` varchar(15) NOT NULL,
+  `toteach` varchar(1) NOT NULL,
+  `institute` varchar(70) NOT NULL,
+  `topic` varchar(70) NOT NULL,
+  `checkin` date NOT NULL,
+  `checkout` date NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `phonenumber` varchar(10) NOT NULL,
+  `description` text NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `registration`
+--
+
+INSERT INTO `registration` (`firstname`, `lastname`, `gender`, `profession`, `toteach`, `institute`, `topic`, `checkin`, `checkout`, `email`, `phonenumber`, `description`, `time`) VALUES
+('hahahahahahaha', 'prasanth', '0', 'Doctor', '1', 'B V RAJU PUBLIC SCHOOL', 'hhdhdh', '2016-10-05', '2016-10-02', 'coolmohitprasanth@gmail.com', '8121445506', '', '2016-10-25 07:17:57'),
+('hahahahahahaha', 'prasanth', '0', 'Doctor', '3', 'Vishnu College of Pharmacy', 'hhdhdh', '2016-10-05', '2016-10-02', 'coolmohitprasanth@gmail.com', '8121445506', '', '2016-10-25 07:17:57'),
+('hahahahahahaha', 'sdfaasfasfasfasf', '0', 'Engineer', '1', 'ADITYA PUBLIC SCHOOL', 'c++', '2016-10-06', '2016-10-12', 'coolmohitprasanth@gmail.com', '8121445506', '', '2016-10-25 07:17:57'),
+('', '', '0', 'Engineer', '2', 'SRKR ENGINEERING COLLEGE', '', '0000-00-00', '0000-00-00', '', '', '', '2016-10-25 07:17:57'),
+('', '', '0', 'Engineer', '1', 'B V RAJU PUBLIC SCHOOL', '', '0000-00-00', '0000-00-00', '', '', '', '2016-10-25 07:17:57'),
+('', '', '0', 'Engineer', '3', 'Vishnu College of Pharmacy', '', '0000-00-00', '0000-00-00', '', '', '', '2016-10-25 07:17:57'),
+('', '', '0', 'Scholar', '1', 'ADITYA PUBLIC SCHOOL', '', '0000-00-00', '0000-00-00', 'coolmohitprasanth@gmail.com', '', '', '2016-10-25 07:17:57'),
+('adsafsa', 'sdfaasfasfasfasf', '0', 'Doctor', '1', 'ADITYA PUBLIC SCHOOL', 'asfasf', '2016-10-05', '2016-09-28', 'coolmohitprasanth@gmail.com', '8121445506', 'afasfsafasfasf', '2016-10-25 07:17:57'),
+('adsafsa', 'fsafasfas', '0', 'Doctor', '1', 'B V RAJU PUBLIC SCHOOL', 'asfasf', '2016-10-14', '2016-10-05', 'coolmohitprasanth@gmail.com', '', 'gaagagagaga', '2016-10-25 07:17:57'),
+('mhoit', 'afasf', '0', 'Engineer', '1', 'ADITYA PUBLIC SCHOOL', 'safasfasf', '2016-10-07', '0000-00-00', 'coolmohitprasanth@gmail.com', '', 'sfasfasf', '2016-10-25 07:49:03'),
+('mohit', 'mohit', '0', 'Engineer', '1', 'Aaditya junior college', 'hallo', '2016-10-21', '2016-10-12', 'coolmohitprasanth@gmail.com', '8121445506', 'testing this for email', '2016-10-25 17:45:49'),
+('mohit', 'sdfaasfasfasfasf', '0', 'Engineer', '1', 'Aaditya junior college', 'hallo', '2016-10-12', '2016-10-11', 'coolmohitprasanth@gmail.com', '8121445506', 'testing this..', '2016-10-25 17:55:51'),
+('mohit', 'sdfaasfasfasfasf', '0', 'Engineer', '1', 'ADITYA PUBLIC SCHOOL', 'hallo', '2016-10-13', '2016-10-13', 'mohitprasanth@gmail.com', '8121445506', 'testing this.....', '2016-10-25 17:59:35'),
+('mohit', 'sdfaasfasfasfasf', '0', 'Engineer', '0', 'porus', 'hallo', '2016-10-12', '2016-10-11', 'coolmohitprasanth@gmail.com', '8121445506', 'test', '2016-10-25 18:02:30'),
+('mohit', 'sdfaasfasfasfasf', '0', 'Engineer', '0', 'porus', 'hallo', '2016-10-12', '2016-10-11', 'coolmohitprasanth@gmail.com', '8121445506', 'test', '2016-10-25 18:05:45'),
+('', '', '', '', '', '', '', '0000-00-00', '0000-00-00', '', '', '', '2016-10-25 18:07:37'),
+('mohit', 'mohit', '0', 'Engineer', '0', 'porus', 'hallo', '2016-10-12', '2016-10-17', 'coolmohitprasanth@gmail.com', '8121445506', 'huhuhuhu...', '2016-10-25 18:08:19'),
+('mohit', 'sdfaasfasfasfasf', '0', 'Engineer', '2', 'SRKR ENGINEERING COLLEGE', 'hallo', '2016-10-12', '2016-10-04', 'coolmohitprasanth@gmail.com', '8121445506', 'tew', '2016-10-25 18:11:06'),
+('mohit', 'sdfaasfasfasfasf', '0', 'Engineer', '1', 'BARADADWAJA PUBLIC SCHOOL', 'hallo', '2016-10-13', '2016-10-13', 'mohitprasanth@gmail.com', '8121445506', 'haahahahaa', '2016-10-26 02:21:48');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `institutes`
+--
+ALTER TABLE `institutes`
+  ADD PRIMARY KEY (`name`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
